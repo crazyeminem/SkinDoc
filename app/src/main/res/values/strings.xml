@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SkinDoc</string>
+    <string name="navigation_home">首页</string>
+    <string name="navigation_diagnose">辅助诊断</string>
+    <string name="navigation_retrieval">图像检索</string>
+    <string name="navigation_personal">个人信息</string>
+    <string name="homepage_btn_wiki">疾病科普</string>
+    <string name="homepage_btn_onlineDoc">在线医疗</string>
+    <string name="homePage_btn_trace">疾病追踪</string>
+    <string name="homepage_btn_train">诊断训练</string>
+    <string name="take_picture">图像采集</string>
+    <string name="local_picture">本地图像</string>
+    <string name="retrieval_picture">检索图像</string>
+    <string name="retrieval_result_bar">图像检索</string>
+    <string name="retrieval_result_save">保存结果</string>
+    <string name="retrieval_result_start">开始检索</string>
+</resources>

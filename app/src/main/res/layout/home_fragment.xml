@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.dmt.skindoc.BannerWithIndicatorView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/bv_home"
+        app:indicatorDrawable="@drawable/bg_indicator_banner"
+        app:indicatorMarginRight="20dp"
+        app:indicatorMarginBottom="20dp"
+        app:indicatorGravity="right"/>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/btn_wiki"
+        android:background="@drawable/btn_selector"
+        android:textColor="@android:color/white"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/homepage_btn_wiki"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_onlineDoc"
+        app:layout_constraintTop_toBottomOf="@id/bv_home" />
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/btn_onlineDoc"
+        android:background="@drawable/btn_selector"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/homepage_btn_onlineDoc"
+        app:layout_constraintTop_toBottomOf="@id/bv_home"
+        app:layout_constraintLeft_toRightOf="@id/btn_wiki"
+        app:layout_constraintRight_toLeftOf="@id/btn_trace"/>
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/btn_trace"
+        android:background="@drawable/btn_selector"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/homePage_btn_trace"
+        app:layout_constraintTop_toBottomOf="@id/bv_home"
+        app:layout_constraintLeft_toRightOf="@id/btn_onlineDoc"
+        app:layout_constraintRight_toLeftOf="@id/btn_train"/>
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/btn_train"
+        android:background="@drawable/btn_selector"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/homepage_btn_train"
+        app:layout_constraintTop_toBottomOf="@id/bv_home"
+        app:layout_constraintLeft_toRightOf="@id/btn_trace"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ListView
+        android:id="@+id/lv_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="40dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_wiki" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
